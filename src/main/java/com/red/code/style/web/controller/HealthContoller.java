@@ -11,7 +11,8 @@ public class HealthContoller {
 	@GetMapping("/health")
 	public Boolean check() {
 		System.out.println("good");
-		System.out.println("success");
+		System.out.println("success1");
+		System.out.println("success2");
 		return Boolean.TRUE;
 	}
 
