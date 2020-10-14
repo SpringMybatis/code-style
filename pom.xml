@@ -68,9 +68,9 @@
                         </goals>
                         <configuration>
                             <target name="check">
-                                <!--<delete file="${basedir}/.git/hooks/pre-push.sample"/>-->
-                                <chmod file="${basedir}/pre-push.sample" perm="777"/>
-                                <copy file="${basedir}/pre-push.sample" tofile="${basedir}/.git/hooks/pre-push.sample"/>
+                                <delete file="${basedir}/.git/hooks/pre-push.sample"/>
+                                <chmod file="${basedir}/pre-push" perm="777"/>
+                                <copy file="${basedir}/pre-push" tofile="${basedir}/.git/hooks/pre-push"/>
                             </target>
                         </configuration>
                     </execution>
